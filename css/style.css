@@ -73,7 +73,8 @@ h4{
 }
 h5{
     font-size: 35px;
-    color: #64C2E7;
+    color: #6480E7;
+    margin-bottom: 35px;
 }
 p{
     font-size: var(--psz);
@@ -174,15 +175,30 @@ section.container{
 /* navigazione fondo pagina */
 .col{
     flex-basis: calc(80% / 4);
+    padding-top: 50px;
     background-color: aqua;
     border: var(--brd);
 }
-.col.social{
+.col.language{
     flex-basis: 30%;
     background-color: salmon;
     border: var(--brd);
+}
+.bandiera{
+    height: 20px;
 }
 .container.dark{
     min-height: 800px;
     padding: 15px 0 40px;
 }
+.socials{
+    margin-top: 20px;
+    color: white;
+}
+.social{
+    color: white;
+    display: flex;
+    margin-top: 20px;
+    height: 30px;
+}
+
