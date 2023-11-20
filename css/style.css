@@ -11,6 +11,7 @@
     --space: 40px;
     --brd: 2px dashed black;
     --psz: 20px;
+    --btns: 1rem;
 }
 /* colori fissi */
 .gray{
@@ -27,6 +28,9 @@
 .text-white{
     color: white;
 }
+.dark-button{
+    background-color: rgb(48, 47, 47);
+}
 /*  utils */
 .container{
     display: flex;
@@ -41,12 +45,27 @@
 button{
     border-radius: 20px;
     border: none; 
+    padding: 10px 35px;
+    font-size: var(--btns);
+}
+.loging{
+    font-size: 10px;
 }
 h1{
     text-align: center;
     font-size: 50px;
-    margin: 40px;
+    margin-top: 40px;
 }
+h2{
+    font-size: 45px;
+    padding-top: 80px;
+    padding-left: 50px;
+}
+p{
+    font-size: var(--psz);
+    padding-top: 20px;
+}
+
 /*  header */
 .background-header{
     background-image: url("../img/jumbo.png");
@@ -72,6 +91,7 @@ h1{
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
+    padding: 0 100px;
 }
 .logo{
     height: 40px;
@@ -84,6 +104,16 @@ button.login{
    height: 90%;
    width: 65px;
    border-radius: 20px;
+   padding: 0;
+   font-size: 12px;
+}
+.download{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 240px 0px 240px;
+    height: 40px;
+    max-width: 100%;
+
 }
 
 /* Spotlight */
@@ -94,7 +124,6 @@ button.login{
 }
 .spotlight-box{
     flex-basis: 60%;
-    border: var(--brd);
 }
 p.text-white{
     text-align: center;
@@ -110,6 +139,7 @@ p.text-white{
     flex-basis: 60%;
     background-color: rgb(79, 185, 226);
     border: var(--brd);
+    padding-top: 50px;
 }
 .card-xs{
     background-color: pink;
