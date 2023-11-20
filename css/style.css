@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* ? misure fisse */
@@ -34,34 +35,52 @@
     flex-direction: row-reverse;
 }
 
-/* contenitori header */
-.header-top{
+/*  header */
+.background-header{
+    background-image: url(//img/jumbo.png);
+    background-size: auto;
+}
+.nav{
     min-height: 70px;
-    background-color: rgb(194, 221, 238);
     display: flex;
     justify-content: center;
     padding: 15px;
 }
-.deck-top{
+.deck-nav{
     height: 40px;
     flex-basis: 70%;
-    background-color: rgb(255, 221, 0);
     display: flex;
 }
-.card-top{
+.card-nav{
     border: var(--brd);
     flex-basis: calc(30% / 2);
 }
-.card-top.long{
+.card-nav.long{
     flex-basis: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
 }
-.header-bottom{
+.logo{
+    height: 40px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.login{
+   height: 100%;
+   
+}
+
+/* Spotlight */
+.spotlight{
     min-height: 500px;
-    background-color: darkblue;
     display: flex;
     
 }
-.header-box{
+.spotlight-box{
     flex-basis: 60%;
     background-color: rgb(230, 137, 219);
     border: var(--brd);
