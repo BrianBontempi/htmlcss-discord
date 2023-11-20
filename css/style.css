@@ -15,11 +15,10 @@
 }
 /* colori fissi */
 .gray{
-    background-color: rgb(181, 178, 178);
+    background-color: rgb(235, 229, 229);
 }
-.green{
-    background-color: green;
-    border: var(--brd);
+.skyblue{
+    background-color: rgb(100, 128, 231);
 }
 .dark{
     background-color: rgb(48, 47, 47);
@@ -55,15 +54,35 @@ h1{
     text-align: center;
     font-size: 50px;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 h2{
     font-size: 45px;
     padding-top: 80px;
     padding-left: 50px;
 }
+h3{
+    font-size: 45px;
+    text-align: center;
+}
+h4{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+h5{
+    font-size: 35px;
+    color: #64C2E7;
+}
 p{
     font-size: var(--psz);
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-left: 50px;
+    line-height: 30px;
+}
+p.text-white{
+    padding: 0;
 }
 
 /*  header */
@@ -137,17 +156,20 @@ p.text-white{
 }
 .card-xl{
     flex-basis: 60%;
-    background-color: rgb(79, 185, 226);
-    border: var(--brd);
     padding-top: 50px;
 }
 .card-xs{
-    background-color: pink;
     flex-basis: 40%;
-    border: var(--brd);
 }
 section.container{
     min-height: 1200px;
+}
+.deck-xl{
+    text-align: center;
+}
+.img-xl{
+    width: 100%;
+    height: auto;
 }
 /* navigazione fondo pagina */
 .col{
