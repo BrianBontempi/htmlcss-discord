@@ -10,6 +10,7 @@
 :root {
     --space: 40px;
     --brd: 2px dashed black;
+    --psz: 20px;
 }
 /* colori fissi */
 .gray{
@@ -23,7 +24,10 @@
     background-color: rgb(48, 47, 47);
     border-bottom: 2px solid white;
 }
-/*  centralizzazione */
+.text-white{
+    color: white;
+}
+/*  utils */
 .container{
     display: flex;
     justify-content: center;
@@ -34,11 +38,19 @@
 .reverse{
     flex-direction: row-reverse;
 }
-
+button{
+    border-radius: 20px;
+    border: none; 
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin: 40px;
+}
 /*  header */
 .background-header{
-    background-image: url(//img/jumbo.png);
-    background-size: auto;
+    background-image: url("../img/jumbo.png");
+    background-size: 100%;
 }
 .nav{
     min-height: 70px;
@@ -52,7 +64,6 @@
     display: flex;
 }
 .card-nav{
-    border: var(--brd);
     flex-basis: calc(30% / 2);
 }
 .card-nav.long{
@@ -69,9 +80,10 @@ a{
     text-decoration: none;
     color: white;
 }
-.login{
-   height: 100%;
-   
+button.login{
+   height: 90%;
+   width: 65px;
+   border-radius: 20px;
 }
 
 /* Spotlight */
@@ -82,8 +94,11 @@ a{
 }
 .spotlight-box{
     flex-basis: 60%;
-    background-color: rgb(230, 137, 219);
     border: var(--brd);
+}
+p.text-white{
+    text-align: center;
+    font-size: var(--psz);
 }
 
 /* contenitori principali */
