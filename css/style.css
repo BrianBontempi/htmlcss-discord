@@ -46,6 +46,11 @@ button{
     border: none; 
     padding: 10px 35px;
     font-size: var(--btns);
+    white-space: nowrap;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 .loging{
     font-size: 10px;
@@ -88,8 +93,10 @@ p.text-white{
 
 /*  header */
 .background-header{
+    background-color: #404EED;
     background-image: url("../img/jumbo.png");
-    background-size: 100%;
+    background-size: cover;
+    background-position: center bottom;
 }
 .nav{
     min-height: 70px;
@@ -120,6 +127,9 @@ a{
     text-decoration: none;
     color: white;
 }
+.card-nav a:hover{
+    text-decoration: underline;
+}
 button.login{
    height: 90%;
    width: 65px;
@@ -129,8 +139,9 @@ button.login{
 }
 .download{
     display: flex;
-    justify-content: space-evenly;
-    margin: 20px 240px 0px 240px;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0 0;
     height: 40px;
     max-width: 100%;
 
